@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I'm an Italian firmware developer, currently working on a various set of different devices. In my job, I develop the graphical interfaces for the various products, their processes and connection to the cloud (IoT) 
+    I love to build software that will be used from people to help people, love to solve problems that as a developer are always on the track
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Title Name"
+      subtitle="2011 to 2014 at University of Trento, Trento, Italy"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Full stack developer"
+      subtitle="From 2017 to 2019 at ECS srl, Belluno, Italy"
+    >
+      Building the IoT cloud website for our company, I was mainly in charge of the front end. But I done a lot of backend too
+    </TimeLineElement>
+    <TimeLineElement
+      title="Firmware developer"
+      subtitle="From 2019 to now at ECS srl, Belluno, Italy"
+    >
+      Starting to develop firmware for IoT medical devices
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>C</li>
+    <li>Java</li>
+    <li>Javascript</li>
+    <li>PHP</li>
+    <li>IoT</li>
+    <li>Networking</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>UI Design</li>
+    <li>Git</li>
+    <li>SVN</li>
+    <li>Astro</li>
+    <li>Node.js</li>
+    <li>Postgres SQL</li>
+    <li>MongoDB</li>
+    <li>AWS</li>
+    <li>AngularJs</li>
+    <li>Serverless</li>
+    <li>Bootstrap</li>
+    <li>JQuery</li>
+    <li>Wordpress</li>
+    <li>Agile</li>
+  </ul>
+</BaseLayout>
